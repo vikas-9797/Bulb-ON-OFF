@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .bulb-container{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Switch Board</h1>
+    <button onclick="turnOn()">Turn On</button>
+    <button onclick="turnOff()">Turn Off</button>
+    <!-- <button>On</button> -->
+
+    <div class="bulb-container">
+    <img id="bulb" src="OFFbulb.jpg" alt="">
+    </div>
+</body>
+</html>
+
+<script>
+
+const turnOn = () =>{
+    let imgOb = document.getElementById("bulb")
+    imgOb.setAttribute('src',"ONbulb.jpg")
+};
+
+const turnOff = () =>{
+    let imgOb= document.getElementById("bulb")
+    imgOb.setAttribute('src',"OFFbulb.jpg")
+};
+
+</script> 
